@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
         playerRigidbody.velocity = movement * 2;
 
-        if(Input.GetKeyDown("F")) {
+        if(Input.GetKeyDown(KeyCode.F)) {
             // Task 1: Start Your Coroutine Here
         }
 	}
@@ -31,4 +31,5 @@ public class PlayerController : MonoBehaviour {
     }
 
     // Task 1: Write Your Coroutine Here
+
 }
