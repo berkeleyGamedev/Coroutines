@@ -20,5 +20,10 @@ public class EnemyMovement : MonoBehaviour {
         // Task 3: Start Your Coroutine Here
     }
 
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        // Task 3: Update moving here
+    }
+
     // Task 3: Write Your Coroutine Here
 }
