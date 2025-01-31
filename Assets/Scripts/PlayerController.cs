@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour {
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-        playerRigidbody.velocity = movement * 2;
+        playerRigidbody.linearVelocity = movement * 2;
 
         if(Input.GetKeyDown(KeyCode.F)) {
             // Task 1: Start Your Coroutine Here
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Wall") {
-            playerRigidbody.velocity = Vector2.zero;
+            playerRigidbody.linearVelocity = Vector2.zero;
         }
     }
 
